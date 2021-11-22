@@ -1,3 +1,12 @@
 body {
   background-color: #fff;
+
+  @media (max-width: 959px) {
+    background-color: #faf;
+  }
+
+  @media and (min-width: 960px) and (max-width: 1200px) {
+    background-color: rgb(99, 37, 37);
+  }
 }
+
