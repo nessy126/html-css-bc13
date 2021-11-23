@@ -1,12 +1,31 @@
-body {
-  background-color: rgb(22, 22, 22);
-
-  @media (max-width: 959px) {
-    background-color: #faf;
-  }
-
-  @media and (min-width: 960px) and (max-width: 1200px) {
-    background-color: rgb(99, 37, 37);
-  }
+.menu {
+  background-color: #E17992;
 }
 
+.heroheader {
+  background-image: url(../images/Rectangle-2.svg);
+  background-image: url(../images/Ellipse-3.svg);
+  background-image: url(../images/slider-pic7-1.png);
+  background-repeat: no-repeat;
+}
+
+.ice-creame {
+  background-image: url(../images/Rectangle-3.svg);
+  background-repeat: no-repeat;
+}
+
+.ice-coffee {
+  background-image: url(../images/bg-ice-coffee.svg);
+  background-repeat: no-repeat;
+}
+
+.milkshakes {
+  background-image: url(../images/bg-milkshakes.svg);
+  background-repeat: no-repeat;
+}
+
+.made {
+  background-color: #FFF5F6;
+  background-image: url(../images/sectionbg1-1.png);
+  background-repeat: no-repeat;
+}
