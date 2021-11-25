@@ -4,86 +4,268 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+  <title>IceCreame</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <!-- Шапка и слайдер -->
+  <header>
+    <section class="heroheader">
+      <div class="conteiner-headmenu">
+        <a href="./index.html">
+          <img src="./images/logo-1.svg" alt="logo" width="199">
+        </a>
+        <img src="./images/Burger.svg" alt="burger-menu" width="20" height="12" class="burger-menu">
+      </div>
+      <div class="menu">
+        <img src="./images/close.svg" alt="close" class="hidden">
+        <button class="hidden" type="button">Buy now
+          <span>></span>
+        </button>
+        <nav class="hidden">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="#how-its-made" class="nav-link">How it’s made?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Our products</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="conteiner-hero">
+          <h1 class="title title-white title-hero-wt">
+            ice cream</br>made with</br>
+            <span class="title-red">passion</span> 
+          </h1>
+          <div class="buttons">
+            <button class="button button-red button-hero" type="button">Products</button>
+            <button class="button button-white button-hero" type="button">How it’s made?</button>
+          </div>
+        <div class="bio-milk hidden">
+          <img src="./images/milk-bio-eco.png" alt="bottle of milk">
+          <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          </p>
+          <a type="button" class=" button-arrow">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="40" height="40" fill="url(#pattern0)"/>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
+              </pattern>
+              <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
+              </defs>
+            </svg>
+          </a>
+        </div>
+          <ul class="feature-list hidden">
+            <li class="feature-item">
+              <p class="feature-text"><span class="title title-red title-number">16</span>cafes</p>
+            </li>
+            <li class="feature-item">
+              <p  class="feature-text"><span class="title title-red title-number">23</span>food trucks</p>
+            </li>
+          </ul> 
+          <img src="./images/so-tasty.png" alt="girl with ice-cream" class="hidden">
+        </div>
+        
+    </section>
+  </header>
+  <main>
+    <div class="conteiner-products">
+      <section class="products title-center">
+      <h4 class="title title-rose title-center">100% natural</h4>
+      <h2 class="title title-red title-center">products</h2>
+      <ul class="product-list">
+          <li class="product ice-creame">
+          <img src="./images/home-pic1.png" alt="ice-cream"
+          width="249"></img>
+          <h3 class="title title-white">ice-cream</h3>
+          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
+          </p>
+                    <a type="button" class=" button-arrow">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="40" height="40" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
+                </pattern>
+                <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
+                </defs>
+                </svg>
+          </a>
+        </li>
+          <li class="product ice-coffee">
+          <img src="./images/home-pic2.png" alt="ice-coffee"
+          width="249"></img>
+          <h3 class="title title-white">ice-coffee</h3>
+          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
+          </p>
+          <a type="button" class=" button-arrow">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="40" height="40" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
+                </pattern>
+                <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
+                </defs>
+                </svg>
+          </a>
+          </li>
+          <li class="product milkshakes">
+          <img src="./images/home-pic3.png" alt="milkshakes"
+          width="249"></img>
+          <h3 class="title title-white">milkshakes</h3>
+          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
+          </p>
+          <a type="button" class=" button-arrow">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="40" height="40" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
+                </pattern>
+                <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
+                </defs>
+                </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </section>
 
-<section class="heroheader">
-  <img src="./images/logo-1.svg" alt="logo" width="199">
-  <img src="./images/Burger.svg" alt="menu">
-  <h1 class="title_white">
-    ice cream
-    made with
-    <span class="big_red">passion</span> 
-  </h1>
-  <button class="button_red" type="button">Products</button>
-  <button class="button_white" type="button">How it’s made?</button>
-</section>
-
-<section class="menu">
-  <img src="./images/close.svg" alt="close">
-  <button class="button_bue" type="button">Buy now</button>
-  <nav>
-    <ul>
-      <li><a href="#"></a>Home</li>
-      <li><a href="#"></a>About us</li>
-      <li><a href="#"></a>How it’s made?</li>
-      <li><a href="#"></a>Our products</li>
-      <li><a href="#"></a>Contact</li>
+    <section class="section-made" id="how-its-made">
+      <div class="made-card conteiner-made">
+        <h3 class="title title-rose title-center">tradition and love</h3>
+        <h2 class="title title-red title-center">how it’s made?</h2>
+        <img src="./images/home-pic4-1.png" alt="milk&cow">
+        <p class="made-bigger-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="made-smaller-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="made-smaller-text">Aliquam erat volutpat. Aenean accumsan</p>
+        <a type="button" class="button button-white">Read more
+          <span>></span>
+              
+        </a>
+      </div>
+    <ul class="produce-list">
+    <li class="produce-card">
+      <img src="./images/icon1.svg" alt="icon">
+      <span class="title title-red">721</span>
+      <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+    </li>
+    <li class="produce-card">
+      <img src="./images/icon2.svg" alt="icon">
+      <span class="title title-red">16KG</span>
+      <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+    </li>
+    <li class="produce-card">
+      <img src="./images/icon3.svg" alt="icon">
+      <span class="title title-red">84</span>
+      <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+    </li>
     </ul>
-  </nav>
+    </section>
 
-</section>
+    <section class="gallery">
+      <img src="./images/gallery.png" alt="pichiers of our products">
+    </section>
 
-<section class="products">
-  <h4 class="title_rose">100% natural</h4>
-  <h2 class="title_red">products</h2>
-  <div class="product ice-creame">
-    <img src="./images/home-pic1.png" alt="ice-cream"></img>
-    <h3 class="title_white">ice-cream</h3>
-    <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
-    </p>
-    <button type="button">-></button>
-  </div>
-    <div class="product ice-coffee">
-    <img src="./images/home-pic2.png" alt="ice-cream"></img>
-    <h3 class="title_white">ice-coffee</h3>
-    <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
-    </p>
-    <button type="button">-></button>
-  </div>
-    <div class="product milkshakes">
-    <img src="./images/home-pic3.png" alt="ice-cream"></img>
-    <h3 class="title_white">milkshakes</h3>
-    <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
-    </p>
-    <button type="button">-></button>
-  </div>
-</section>
+    <section class="feedbacks">
+      <article class="feedback">
+        <img src="./images/people-01.png" alt="photo of client" width="85" class="feedback-photo ">
+        <p class="title-center feedback-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+        </p>
+        <img src="./images/Group 8.svg" alt="three points">
+        <p class="feedback-name title-center">Emily, Los Angeles</p>
+      </article>
+      <div class="switch">
+        <img src="./images/home-fb.svg" alt="home">
+        <img src="./images/point-fb.svg" alt="second page">
+        <img src="./images/point-fb.svg" alt="third page">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="contacts">
+      <ul>
+        <li class="contact-card">
+          <p class="contact-kind-cafe">cafe</p>
+          <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <p class="contact-name">Monday - Friday</p>
+          <p class="contact-time">06:00 AM - 10:00 PM</p>
+          <p class="contact-name">Saturday - Sunday</p>
+          <p class="contact-time">08:00 AM - 16:00 PM</p>
+          <address class="address-contacts">
+            <a href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+            <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </address>
+        </li>
+        <li class="contact-card">
+          <p class="contact-kind-foodtruck">FOOD TRUCK</p>
+          <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <p class="contact-name">Monday - Friday</p>
+          <p class="contact-time">06:00 AM - 10:00 PM</p>
+          <p class="contact-name">Saturday - Sunday</p>
+          <p class="contact-time">08:00 AM - 16:00 PM</p>
+          <address class="address-contacts">
+            <a href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+            <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </address>
+        </li>
+        <li class="contact-card">
+          <p class="contact-kind-cafe">cafe</p>
+          <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <p class="contact-name">Monday - Friday</p>
+          <p class="contact-time">06:00 AM - 10:00 PM</p>
+          <p class="contact-name">Saturday - Sunday</p>
+          <p class="contact-time">08:00 AM - 16:00 PM</p>
+          <address class="contacts">
+            <a href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
+            <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </address>
+        </li>
+      </ul>
+      <button class="button button-red" type="button">Our Locations
+        <span>></span>
+      </button>
+      <button class="button " type="button">Franchise
+        <span>></span>
+      </button>
+    </section>
+    <section class="social">
+      <h2 class="title title-rose footer-title">homemade ice cream made</h2>
+      <h3 class="title title-red footer-title-big">with passion</h3>
+      <ul class="social-list">
+        <li class="social-link">
+          <a href="https://github.com/" target="_blank" aria-label="github link">
 
-<section class="made">
-  <h3 class="title_rose">tradition and love</h3>
-  <h2 class="title_red">how it’s made?</h2>
-  <img src="./images/home-pic4-1.png" alt="milk&cow">
-  <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-  </p>
-  <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-  </p>
-  <p>Aliquam erat volutpat. Aenean accumsan</p>
-  <button class="button_white" type="button">Read more ></button>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="https://t.me/" target="_blank" aria-label="Telegram link">
 
-</section>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="https://fb.com/" target="_blank" aria-label="Facebook link">
 
-
-<section class="gallery"></section>
-
-<section class="feedbacks"></section>
-<section class="contacts"></section>
-<section class="sotial"></section>
-<section class="copy"></section>
+          </a>
+        </li>
+      </ul>
+      <p>Feel free to contact <span>+61 (0) 383 766 284</span></p>
+    </section>
+    <section class="copy title-center">
+      <p>&copy; 2019 - IceCream. All Rights Reserved. </p>
+    </section>
+  </footer>
 </body>
 </html>
