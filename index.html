@@ -21,7 +21,7 @@
         </a>
         <img src="./images/Burger.svg" alt="burger-menu" width="20" height="12" class="burger-menu">
       </div>
-      <div class="menu">
+      <div class="menu overlay">
         <img src="./images/close.svg" alt="close" class="hidden">
         <button class="hidden" type="button">Buy now
           <span>></span>
@@ -43,7 +43,7 @@
           </h1>
           <div class="buttons">
             <button class="button button-red button-hero" type="button">Products</button>
-            <button class="button button-white button-hero" type="button">How it’s made?</button>
+            <button class="button button-hero" type="button">How it’s made?</button>
           </div>
         <div class="bio-milk hidden">
           <img src="./images/milk-bio-eco.png" alt="bottle of milk">
@@ -75,16 +75,16 @@
     </section>
   </header>
   <main>
-    <div class="conteiner-products">
-      <section class="products title-center">
-      <h4 class="title title-rose title-center">100% natural</h4>
-      <h2 class="title title-red title-center">products</h2>
-      <ul class="product-list">
-          <li class="product ice-creame">
+    <section class="products title-center">
+      <div class="conteiner-products">
+        <h4 class="title title-rose title-center">100% natural</h4>
+        <h2 class="title title-red title-center">products</h2>
+        <ul class="product-list">
+          <li class="product-item ice-creame">
           <img src="./images/home-pic1.png" alt="ice-cream"
-          width="249"></img>
+          width="249" class="product-img"></img>
           <h3 class="title title-white">ice-cream</h3>
-          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
+          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter" class="delimiter">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
           </p>
                     <a type="button" class=" button-arrow">
@@ -99,11 +99,11 @@
                 </svg>
           </a>
         </li>
-          <li class="product ice-coffee">
+          <li class="product-item ice-coffee">
           <img src="./images/home-pic2.png" alt="ice-coffee"
-          width="249"></img>
+            width="249" class="product-img"></img>
           <h3 class="title title-white">ice-coffee</h3>
-          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
+          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter" class="delimiter">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
           </p>
           <a type="button" class=" button-arrow">
@@ -118,11 +118,11 @@
                 </svg>
           </a>
           </li>
-          <li class="product milkshakes">
+          <li class="product-item milkshakes">
           <img src="./images/home-pic3.png" alt="milkshakes"
-          width="249"></img>
+          width="249" class="product-img"></img>
           <h3 class="title title-white">milkshakes</h3>
-          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter">
+          <img src="./images/Group-of-ellipse-product.svg" alt="delimiter" class="delimiter">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
           </p>
           <a type="button" class=" button-arrow">
@@ -137,8 +137,8 @@
                 </svg>
           </a>
         </li>
-      </ul>
-    </div>
+        </ul>
+      </div>
     </section>
 
     <section class="section-made" id="how-its-made">
@@ -151,28 +151,28 @@
         <p class="made-smaller-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
         </p>
         <p class="made-smaller-text">Aliquam erat volutpat. Aenean accumsan</p>
-        <a type="button" class="button button-white">Read more
+        <a type="button" class="button">Read more
           <span>></span>
-              
         </a>
+        <ul class="produce-list">
+          <li class="produce-card">
+            <img src="./images/icon1.svg" alt="icon" class="produce-image">
+            <span class="title title-red">721</span>
+            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </li>
+          <li class="produce-card">
+            <img src="./images/icon2.svg" alt="icon" class="produce-image">
+            <span class="title title-red">16KG</span>
+            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </li>
+          <li class="produce-card">
+            <img src="./images/icon3.svg" alt="icon" class="produce-image">
+            <span class="title title-red">84</span>
+            <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+          </li>
+        </ul>
       </div>
-    <ul class="produce-list">
-    <li class="produce-card">
-      <img src="./images/icon1.svg" alt="icon">
-      <span class="title title-red">721</span>
-      <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-    </li>
-    <li class="produce-card">
-      <img src="./images/icon2.svg" alt="icon">
-      <span class="title title-red">16KG</span>
-      <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-    </li>
-    <li class="produce-card">
-      <img src="./images/icon3.svg" alt="icon">
-      <span class="title title-red">84</span>
-      <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
-    </li>
-    </ul>
+    
     </section>
 
     <section class="gallery">
@@ -180,25 +180,30 @@
     </section>
 
     <section class="feedbacks">
-      <article class="feedback">
-        <img src="./images/people-01.png" alt="photo of client" width="85" class="feedback-photo ">
-        <p class="title-center feedback-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+      <article class="feedback conteiner-feedbacks">
+        <img src="./images/people-01.png" alt="photo of client" width="85" class="feedback-photo">
+        <div class="feedback-bg">
+           <p class="title-center feedback-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
         </p>
-        <img src="./images/Group 8.svg" alt="three points">
+        </div>
+       
+        <img src="./images/Group 8.svg" alt="three points" class="red-points">
         <p class="feedback-name title-center">Emily, Los Angeles</p>
+        <div class="switch">
+          <img src="./images/home-fb.svg" alt="home">
+          <img src="./images/point-fb.svg" alt="second page">
+          <img src="./images/point-fb.svg" alt="third page">
+        </div>
       </article>
-      <div class="switch">
-        <img src="./images/home-fb.svg" alt="home">
-        <img src="./images/point-fb.svg" alt="second page">
-        <img src="./images/point-fb.svg" alt="third page">
-      </div>
+
     </section>
   </main>
   <footer>
     <section class="contacts">
-      <ul>
-        <li class="contact-card">
-          <p class="contact-kind-cafe">cafe</p>
+      <ul class="contact-list">
+        <li class="contact-item">
+          <p class="contact-kind contact-cafe">cafe</p>
+          <p class="contact-city">Chicago</p>
           <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
           <p class="contact-name">Monday - Friday</p>
           <p class="contact-time">06:00 AM - 10:00 PM</p>
@@ -209,8 +214,9 @@
             <a href="mailto:noreply@envato.com">noreply@envato.com</a>
           </address>
         </li>
-        <li class="contact-card">
-          <p class="contact-kind-foodtruck">FOOD TRUCK</p>
+        <li class="contact-item contact-foodtruck">
+          <p class="contact-kind contact-foodtruck">FOODTRUCK</p>
+          <p class="contact-city">Los Angeles</p>
           <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
           <p class="contact-name">Monday - Friday</p>
           <p class="contact-time">06:00 AM - 10:00 PM</p>
@@ -221,27 +227,29 @@
             <a href="mailto:noreply@envato.com">noreply@envato.com</a>
           </address>
         </li>
-        <li class="contact-card">
-          <p class="contact-kind-cafe">cafe</p>
+        <li class="contact-item">
+          <p class="contact-kind contact-cafe">cafe</p>
+          <p class="contact-city">New York</p>
           <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
           <p class="contact-name">Monday - Friday</p>
           <p class="contact-time">06:00 AM - 10:00 PM</p>
           <p class="contact-name">Saturday - Sunday</p>
           <p class="contact-time">08:00 AM - 16:00 PM</p>
-          <address class="contacts">
+          <address class="address-contacts">
             <a href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
             <a href="mailto:noreply@envato.com">noreply@envato.com</a>
           </address>
         </li>
       </ul>
-      <button class="button button-red" type="button">Our Locations
-        <span>></span>
-      </button>
-      <button class="button " type="button">Franchise
-        <span>></span>
-      </button>
-    </section>
-    <section class="social">
+      <div class="btn-contact">
+        <button class="button button-red" type="button">Our Locations
+          <span>></span>
+        </button>
+        <button class="button " type="button">Franchise
+          <span>></span>
+        </button>
+      </div>
+      <div class="social conteiner-social">
       <h2 class="title title-rose footer-title">homemade ice cream made</h2>
       <h3 class="title title-red footer-title-big">with passion</h3>
       <ul class="social-list">
@@ -262,10 +270,12 @@
         </li>
       </ul>
       <p>Feel free to contact <span>+61 (0) 383 766 284</span></p>
-    </section>
-    <section class="copy title-center">
+    </div>
+    <div class="copy title-center">
       <p>&copy; 2019 - IceCream. All Rights Reserved. </p>
+    </div>
     </section>
+    
   </footer>
 </body>
 </html>
