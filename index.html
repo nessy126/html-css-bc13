@@ -13,10 +13,8 @@
 </head>
 <body>
   <!-- Шапка и слайдер -->
-  <header>
+  <header class="header">
     <section class="heroheader">
-      <img src="./images/Ellipse-3.svg" alt="circle" class="circle">
-      <img src="./images/slider-pic7-1.png" alt="ice-cream" class="ice-crem-img">
       <div class="menu overlay">
         <img src="./images/close.svg" alt="close" class="">
         <button class="" type="button">Buy now
@@ -34,7 +32,7 @@
       </div>
       <div class="conteiner-headmenu">
         <a href="./index.html">
-          <img src="./images/logo-1.svg" alt="logo" width="199">
+          <img src="./images/logo-1.svg" alt="logo" width="199" height="50">
         </a>
         <img src="./images/Burger.svg" alt="burger-menu" width="20" height="12" class="burger-menu">
       </div>
@@ -53,15 +51,6 @@
           <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
           </p>
           <a type="button" class=" button-arrow">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect width="40" height="40" fill="url(#pattern0)"/>
-              <defs>
-              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-              <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
-              </pattern>
-              <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
-              </defs>
-            </svg>
           </a>
         </div>
           <ul class="feature-list hidden">
@@ -90,17 +79,7 @@
             <img src="./images/Group-of-ellipse-product.svg" alt="delimiter" class="delimiter">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
             </p>
-            <a type="button" class=" button-arrow">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="40" height="40" fill="url(#pattern0)"/>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
-                </pattern>
-                <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
-                </defs>
-                </svg>
-            </a>
+            <a type="button" class="button-arrow"></a>
           </li>
           <li class="product-item ice-coffee">
           <img src="./images/home-pic2.png" alt="ice-coffee"
@@ -109,17 +88,7 @@
           <img src="./images/Group-of-ellipse-product.svg" alt="delimiter" class="delimiter">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
           </p>
-          <a type="button" class=" button-arrow">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="40" height="40" fill="url(#pattern0)"/>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
-                </pattern>
-                <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
-                </defs>
-                </svg>
-          </a>
+          <a type="button" class="button-arrow"></a>
           </li>
           <li class="product-item milkshakes">
           <img src="./images/home-pic3.png" alt="milkshakes"
@@ -128,17 +97,7 @@
           <img src="./images/Group-of-ellipse-product.svg" alt="delimiter" class="delimiter">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna aliqua facilisis. 
           </p>
-          <a type="button" class=" button-arrow">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="40" height="40" fill="url(#pattern0)"/>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_5_571" transform="scale(0.025)"/>
-                </pattern>
-                <image id="image0_5_571" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmxJREFUeNrUmc9LG0EUx2cXzUGNlCYgalCLRb1XwavxKl7EX3+AglC82Vt7qIUWT6VQkmrpqQdBPIjiTT16MJ4UMaKgIdaKsRSqUi1k+n3hDYRWaXZ33J1+4ZPNZrMz330zOzP71pJSCheyQQfoAu2gBdSDSj5+CY7BHkiBNbAB8o5rIoMOiIHXICOdK8PnxpzUWeofI+A9uJbedc1lRXQZHABnUr+ozEEvBstAQt6/ElyXI4MVYFH6p0WusySDdDUL0n8t3BbJ2wwmZXBK/svgoAxew8WerKKBOgJ2QVQEq2+gDZypGUHplQHmSA/BpNpREWwA+6BcmKFf4DHIqAiOGWROsJcxFUEyeQRiwixlQaNalZhmTrCnDjIY11Yk+vPJxFtxOjmjq8SuMnw80VXazdGJ+D6/IvI/rgr7Nc9HvBbZThFs1WUw1FQnmuamhB2uELl3szoi2UqjdU73VHCV2pE7j3rkdjQuv76c9lJUjpo47Pbydpt77+6OP28KW4ok9c2aF6NuqgjbvtyPluXlxjO7icnglqHmSFvUxGltw8zhF3HY/6wwzETHh3QMM2m6STZBn5ZhprFWPOjrFnZ1pQ5zpBTNxZ34si7MVOd/sVigdMRnA6NHnvJqwUrRO6BuZIg5GuWbKYp2UTg/GhS9T+zpr4emNG+D1DkvYM7/fGiiH54aEL1xZe6u9FuQD+4fSskshAJMfYScJI+WfTS35CR5pCj3qbmTXJfrBObQPSYwh3WlgKOcaNSVAk5wmdpy1MVJ9Dcg68JYls91lES3PL6GiPNjawtPl1V8/IJngj1ezq26fQ3xW4ABAFkjuA97cJ0jAAAAAElFTkSuQmCC"/>
-                </defs>
-                </svg>
-          </a>
+          <a type="button" class="button-arrow"></a>
         </li>
         </ul>
       </div>
@@ -151,25 +110,25 @@
         <img src="./images/home-pic4-1.png" alt="milk&cow">
         <p class="made-bigger-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
         </p>
-        <p class="made-smaller-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+        <p class="made-smaller-text made-bg">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
         </p>
         <p class="made-smaller-text">Aliquam erat volutpat. Aenean accumsan</p>
         <a type="button" class="button">Read more
-          <span>></span>
+          <!-- <span>></span> -->
         </a>
         <ul class="produce-list">
           <li class="produce-card">
-            <img src="./images/icon1.svg" alt="icon" class="produce-image">
+            <!-- <img src="./images/icon1.svg" alt="icon" class="produce-image"> -->
             <span class="title title-red">721</span>
             <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
           </li>
           <li class="produce-card">
-            <img src="./images/icon2.svg" alt="icon" class="produce-image">
+            <!-- <img src="./images/icon2.svg" alt="icon" class="produce-image"> -->
             <span class="title title-red">16KG</span>
             <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
           </li>
           <li class="produce-card">
-            <img src="./images/icon3.svg" alt="icon" class="produce-image">
+            <!-- <img src="./images/icon3.svg" alt="icon" class="produce-image"> -->
             <span class="title title-red">84</span>
             <p>Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
           </li>
@@ -202,77 +161,108 @@
     </section>
   </main>
   <footer>
-    <section class="contacts">
-      <ul class="contact-list">
+    <section class="conteiner-contacts">
+      <div class="office">
+         <ul class="contact-list">
         <li class="contact-item">
           <p class="contact-kind contact-cafe">cafe</p>
-          <p class="contact-city">Chicago</p>
-          <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-          <p class="contact-name">Monday - Friday</p>
-          <p class="contact-time">06:00 AM - 10:00 PM</p>
-          <p class="contact-name">Saturday - Sunday</p>
-          <p class="contact-time">08:00 AM - 16:00 PM</p>
-          <address class="address-contacts">
+          <div class="contact-bord1">
+            <p class="contact-city">Chicago</p>
+            <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          </div>
+          <div class="contact-bord2">
+            <p class="contact-name">Monday - Friday</p>
+            <p class="contact-time">06:00 AM - 10:00 PM</p>
+            <p class="contact-name">Saturday - Sunday</p>
+            <p class="contact-time">08:00 AM - 16:00 PM</p>
+          </div>
+          <div class="contact-bord3">
+            <address class="address-contacts">
             <a href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
             <a href="mailto:noreply@envato.com">noreply@envato.com</a>
           </address>
+          </div>
         </li>
-        <li class="contact-item contact-foodtruck">
-          <p class="contact-kind contact-foodtruck">FOODTRUCK</p>
-          <p class="contact-city">Los Angeles</p>
-          <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-          <p class="contact-name">Monday - Friday</p>
-          <p class="contact-time">06:00 AM - 10:00 PM</p>
-          <p class="contact-name">Saturday - Sunday</p>
-          <p class="contact-time">08:00 AM - 16:00 PM</p>
-          <address class="address-contacts">
+                <li class="contact-item">
+          <p class="contact-kind contact-foodtruck">foodtruck</p>
+          <div class="contact-bord1">
+            <p class="contact-city">Los Angeles</p>
+            <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          </div>
+          <div class="contact-bord2">
+            <p class="contact-name">Monday - Friday</p>
+            <p class="contact-time">06:00 AM - 10:00 PM</p>
+            <p class="contact-name">Saturday - Sunday</p>
+            <p class="contact-time">08:00 AM - 16:00 PM</p>
+          </div>
+          <div class="contact-bord3">
+            <address class="address-contacts">
             <a href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
             <a href="mailto:noreply@envato.com">noreply@envato.com</a>
           </address>
+          </div>
         </li>
-        <li class="contact-item">
+                <li class="contact-item">
           <p class="contact-kind contact-cafe">cafe</p>
-          <p class="contact-city">New York</p>
-          <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-          <p class="contact-name">Monday - Friday</p>
-          <p class="contact-time">06:00 AM - 10:00 PM</p>
-          <p class="contact-name">Saturday - Sunday</p>
-          <p class="contact-time">08:00 AM - 16:00 PM</p>
-          <address class="address-contacts">
+          <div class="contact-bord1">
+            <p class="contact-city">New York</p>
+            <p class="contact-text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          </div>
+          <div class="contact-bord2">
+            <p class="contact-name">Monday - Friday</p>
+            <p class="contact-time">06:00 AM - 10:00 PM</p>
+            <p class="contact-name">Saturday - Sunday</p>
+            <p class="contact-time">08:00 AM - 16:00 PM</p>
+          </div>
+          <div class="contact-bord3">
+            <address class="address-contacts">
             <a href="tel:+61(0) 383 766 284">+61(0) 383 766 284</a>
             <a href="mailto:noreply@envato.com">noreply@envato.com</a>
           </address>
+          </div>
         </li>
       </ul>
       <div class="btn-contact">
         <button class="button button-red" type="button">Our Locations
-          <span>></span>
         </button>
-        <button class="button " type="button">Franchise
-          <span>></span>
+        <button class="button" type="button">Franchise
         </button>
       </div>
+      </div>
+     
       <div class="social conteiner-social">
-      <h2 class="title title-rose footer-title">homemade ice cream made</h2>
-      <h3 class="title title-red footer-title-big">with passion</h3>
-      <ul class="social-list">
-        <li class="social-link">
-          <a href="https://github.com/" target="_blank" aria-label="github link">
-
-          </a>
-        </li>
-        <li class="social-link">
-          <a href="https://t.me/" target="_blank" aria-label="Telegram link">
-
-          </a>
-        </li>
-        <li class="social-link">
-          <a href="https://fb.com/" target="_blank" aria-label="Facebook link">
-
-          </a>
-        </li>
-      </ul>
-      <p>Feel free to contact <span>+61 (0) 383 766 284</span></p>
+        <div class="footer-left">
+          <h2 class="title title-rose footer-title">homemade ice cream made</h2>
+          <h3 class="title title-red footer-title-big">with passion</h3>
+        </div>
+        <div class="footer-right">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/" target="_blank" aria-label="github link">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite-icons.svg#social-icon-gh"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://t.me/" target="_blank" aria-label="Telegram link">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite-icons.svg#social-icon-t"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://fb.com/" target="_blank" aria-label="Facebook link">
+                <svg class="icon">
+                  <use href="./images/sprite-icons.svg#social-icon-fb"></use>
+                </svg>
+                <img src="./images/sprite-icons.svg" alt="">
+              </a>
+            </li>
+          </ul>
+          <p>Feel free to contact <span>+61 (0) 383 766 284</span></p>
+        </div>
+      
     </div>
     <div class="copy title-center">
       <p>&copy; 2019 - IceCream. All Rights Reserved. </p>
