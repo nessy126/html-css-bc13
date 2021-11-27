@@ -10,6 +10,7 @@
   --bg-green: #C2E297;
   --bg-brown: #F0D1A5;
   --bg-menu: #E17992;
+  --icon-rose: #FEA5BB;
 
 }
 
@@ -76,6 +77,7 @@ section {
 /* Контейнеры */
 
 .conteiner-headmenu {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -132,6 +134,9 @@ section {
 }
 
 .conteiner-social {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20.53px;
   padding-bottom: 43px;
@@ -452,13 +457,24 @@ h1 {
 }
 
 .header {
-  background-color: var(--heroheader-bgcolor);
+  height: 502px;
+
 }
 
 .heroheader {
-  background-image: url(../images/slider-pic7-1.png), url(../images/Ellipse-3.svg);
+  position: absolute;
+  background-image: url(../images/slider-pic7-1.png),
+  url(../images/Ellipse-3.svg),
+  linear-gradient(90deg, rgba(255, 184, 202, 1) 0%, rgba(255, 184, 202, 1) 0%, rgba(255, 184, 202, 1) 100%);
   background-repeat: no-repeat;
-  background-position: 117px 92px, 36px 83px;
+  background-position: 117px 92px, 36px 83px, 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 502px;
+
 }
 
 /* Секция Products */
@@ -746,10 +762,10 @@ h1 {
 .social p {
   font-size: 12px;
 }
-.social span {
+.social a {
   color:var(--red-color);
-  text-align: right;
 }
+
 .footer-left {
   display: flex;
   width: 232px;
@@ -774,15 +790,10 @@ h1 {
 
 }
 
-/* .social-item a:hover,
-.social-item a:focus {
-  fill: var(--red-color); 
-}*/
-
 .icon {
   width: 32px;
   height: 32px;
-  fill: var(--rose-color);
+  fill: var(--icon-rose);
 }
 
 .icon:hover,
